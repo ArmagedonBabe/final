@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Martian+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Martian+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+        body{
+            background-color: rgba(0,0,0,.03);
+            margin: 0;
+            padding: 0;
+            font-family: 'Hind Madurai', sans-serif;
+            overflow-x: hidden;
+        }
+        h1{
+            font-family: 'Libre Baskerville', serif;
+        }
+        .main{
+            border: 1px solid lightgrey;
+            width: 40vw;
+            height: 25vw;
+            margin: 4vw auto ;
+            text-align: center;
+            padding: 2vw;
+            background-color: white;
+
+        }
+        .secondMain{
+            border: 1px solid lightgrey;
+            width: 40vw;
+            margin: 5vw auto;
+            padding: 2vw;
+            text-align: center;
+            background-color: white;
+        }
+        form{
+            margin: 2vw;
+        }
+        input, button{
+            width: 20vw;
+            height: 2vw;
+        }
+        button{
+            border: none;
+            color: white;
+            background-color: #85cdff;
+            border-radius: 5px;
+            margin-bottom: 2vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>SABYRZHAN</h1>
+        <form>
+            <input type="email" name="mail" id="mail" placeholder="Phone number, username, or email" required>
+            <br>
+            <br>
+            <input type="password" name="pass" id="passw" placeholder="Password" required>
+
+        </form>
+        <button>Log in</button>
+        <hr>
+        <button style="margin-top: 2vw">Forgot password?</button>
+    </div>
+    <div class="secondMain">
+        Don't have an account? <a style="font-weight: bold; color: #85cdff; text-decoration: none" href="/lab72.html">Sign up</a>
+    </div>
+
+</body>
+</html>
