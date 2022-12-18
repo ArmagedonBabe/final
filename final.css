@@ -15,8 +15,10 @@ body{
     font-size: 20px;
 }
 .header{
+    top: 0;
     position: fixed;
-}
+    z-index: 2.1;
+}   
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -55,6 +57,8 @@ a:hover{
     margin: 2vh 2vw 0 2vw;
 }
 .header{
+    z-index: 9999;
+    width: 100%;
     background-color: #1a1a1a;
     box-shadow: 0 1px 10px black;
 }
