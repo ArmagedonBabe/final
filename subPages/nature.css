@@ -65,6 +65,11 @@ a:hover{
     width: 46vw;
     height: 350px;
     margin: 0.5vw;
+    object-fit: cover;
+    transition : .2s linear;
+}
+.firstPicture img:hover{
+    transform: scale(1.03);
 }
 .secondPicture{
     border: 1px solid black;
@@ -75,6 +80,12 @@ a:hover{
     width: 46vw;
     height: 350px;
     margin: 0.5vw;
+    margin: 0.5vw;
+    object-fit: cover;
+    transition : .2s linear;
+}
+.secondPicture img:hover{
+    transform: scale(1.03);
 }
 .thirdPicture{
     border: 1px solid black;
@@ -85,6 +96,11 @@ a:hover{
     width: 46vw;
     height: 350px;
     margin: 0.5vw;
+    object-fit: cover;
+    transition : .2s linear;
+}
+.thirdPicture img:hover{
+    transform: scale(1.03);
 }
 .fourthPicture{
     border: 1px solid black;
@@ -95,6 +111,11 @@ a:hover{
     width: 46vw;
     height: 350px;
     margin: 0.5vw;
+    object-fit: cover;
+    transition : .2s linear;
+}
+.fourthPicture img:hover{
+    transform: scale(1.03);
 }
 .fivethPicture{
     border: 1px solid black;
@@ -105,6 +126,12 @@ a:hover{
     width: 93.5vw;
     height: 700px;
     margin: 0.5vw;
+    margin: 0.5vw;
+    object-fit: cover;
+    transition : .2s linear;
+}
+.fivethPicture img:hover{
+    transform: scale(1.03);
 }
 .sixthPicture{
     border: 1px solid black;
@@ -115,6 +142,12 @@ a:hover{
     width: 93.5vw;
     height: 700px;
     margin: 0.5vw;
+    margin: 0.5vw;
+    object-fit: cover;
+    transition : .2s linear;
+}
+.sixthPicture img:hover{
+    transform: scale(1.03);
 }
 .footer{
     margin: 1vw 4vw 1vw 4vw;
@@ -124,4 +157,38 @@ a:hover{
 }
 img{
     width: 10vw;
+    object-fit: cover;
+    transition : .2s linear;
+}
+.mainPage .popup-image{
+    position: fixed;
+    top : 0; left :0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    display: none;
+}
+.mainPage .popup-image span{
+    position: absolute;
+    top : 0; right:10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color:#fff;
+    cursor: pointer;
+    z-index: 200;
+}
+.mainPage .popup-image img{
+    position: absolute;
+    top: 50%;left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    width:750px;
+    object-fit: cover;
+
+}
+@media(max-width: 768px){
+    .mainPage .popup-image img{
+        width: 95%;
+    }
 }
