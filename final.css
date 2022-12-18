@@ -56,7 +56,7 @@ a:hover{
     box-shadow: 0 1px 10px black;
 }
 .item1{
-    background-image: url("shymkent-history.jpg");
+    background-image: url(../final/img/shymkent-history.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,7 +69,7 @@ a:hover{
 
 }
 .item2{
-    background-image: url("shymkent-history2.jpeg");
+    background-image: url(../final/img/shymkent-history2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -82,7 +82,20 @@ a:hover{
 
 }
 .item3{
-    background-image: url("shymkent-entertainment.jpg");
+    background-image: url(../final/img/shymkent-entertainment.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4), 1px 0 10px rgba(0,0,0,0.4), 0 -1px 10px rgba(0,0,0,0.4), -1px 0 10px rgba(0,0,0,0.4);
+
+}
+.item4{
+    background-image: url(../final/img/shymkent-people.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -95,7 +108,7 @@ a:hover{
 
 }
 .item5{
-    background-image: url("shymkent-nature2.jpg");
+    background-image: url(../final/img/shymkent-nature2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -108,7 +121,7 @@ a:hover{
 
 }
 .item6{
-    background-image: url("shymkent-essential.jpeg");
+    background-image: url(../final/img/shymkent-essential.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
