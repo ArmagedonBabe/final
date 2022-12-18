@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Dots&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(55deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 51%, rgba(0,0,0) 85%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo{
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 15px;
+}
+label,input{
+    position: absolute;
+    font-size: 20px;
+    top: 18px;
+    left: 25px;
+    display: none;
+}
+li{
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+.order2{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: rgba(256,256,256,0.7);
+}
+.mainItems{
+    margin: 2vh 2vw 0 2vw;
+}
+.header{
+    background-color: #1a1a1a;
+    box-shadow: 0 1px 10px black;
+}
+.item1{
+    background-image: url(../final/img/shymkent-history.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4), 1px 0 10px rgba(0,0,0,0.4), 0 -1px 10px rgba(0,0,0,0.4), -1px 0 10px rgba(0,0,0,0.4);
+
+}
+.item2{
+    background-image: url(../final/img/shymkent-history2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4), 1px 0 10px rgba(0,0,0,0.4), 0 -1px 10px rgba(0,0,0,0.4), -1px 0 10px rgba(0,0,0,0.4);
+
+}
+.item3{
+    background-image: url(../final/img/shymkent-entertainment.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4), 1px 0 10px rgba(0,0,0,0.4), 0 -1px 10px rgba(0,0,0,0.4), -1px 0 10px rgba(0,0,0,0.4);
+
+}
+.item4{
+    background-image: url(../final/img/shymkent-people.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4), 1px 0 10px rgba(0,0,0,0.4), 0 -1px 10px rgba(0,0,0,0.4), -1px 0 10px rgba(0,0,0,0.4);
+
+}
+.item5{
+    background-image: url(../final/img/shymkent-nature2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4), 1px 0 10px rgba(0,0,0,0.4), 0 -1px 10px rgba(0,0,0,0.4), -1px 0 10px rgba(0,0,0,0.4);
+
+}
+.item6{
+    background-image: url(../final/img/shymkent-essential.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4), 1px 0 10px rgba(0,0,0,0.4), 0 -1px 10px rgba(0,0,0,0.4), -1px 0 10px rgba(0,0,0,0.4);
+
+}
+.textBox{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 5vw;
+}
+.button{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-size: 2vw;
+    padding: 1vw;
+    background-color: black;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.button:hover{
+     background-color: rgba(0,0,0,0.85);
+    cursor: pointer;
+ }
+img{
+    width: 10vw;
+}
+.footer{
+    margin: 1vw 4vw 1vw 4vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
