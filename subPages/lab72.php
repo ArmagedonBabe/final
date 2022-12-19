@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,10 +70,11 @@
   <h3>Sign up to have a great experience and invite your friends.</h3>
   <hr style="width: 25vw">
   <form>
+    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+    <input type="text" name="fname" id="fname" placeholder="User Name" required>
     <input type="email" name="mail" id="mail" placeholder="Email" required>
-    <input type="text" name="fname" id="fname" placeholder="Full name" required>
-    <input type="text" name="Uname" id="Uname" placeholder="Username" required>
     <input type="password" name="pass" id="passw" placeholder="Password" required>
+    <input type="password" name="pass" id="conPassw" placeholder="Confirm Password" required>
   </form>
   <div style="width: 20vw; color: white; margin-left: auto; margin-right: auto; font-size: 1vw ">People who use our service may have uploaded your contact information. <span style="font-weight: bold">Learn More</span></div>
   <br>
@@ -79,7 +83,7 @@
   <button>Sign in</button>
 </div>
 <div class="secondMain">
-  Have an account? <a style="font-weight: bold; color: #85cdff; text-decoration: none" href="lab7.html">Log in</a>
+  Have an account? <a style="font-weight: bold; color: #85cdff; text-decoration: none" href="lab7.php">Log in</a>
 </div>
 
 </body>

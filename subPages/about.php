@@ -98,6 +98,20 @@
         <div><small>© SHYMKENT. Все права защищены</small></div>
         <div><small><a href="#">Пользовательское соглашение</a></small></div>
     </div>
-    <script src="about.js"></script>
+    <script src="about.js">
+        var lastScrollTop = 0;
+navbar = document.getElementById("navbar");
+window.addEventListener("scroll", function(){
+  var scrollTop = window.pageXOffset || document
+  .documentElement.scrollTop;
+  if(scrollTop > lastScrollTop){
+    navbar.style.top = "-80px";
+  }else{
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
+})
+
+    </script>
 </body>
 </html>

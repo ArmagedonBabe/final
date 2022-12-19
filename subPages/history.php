@@ -112,5 +112,8 @@
         <div><small>© SHYMKENT. Все права защищены</small></div>
         <div><small><a href="#">Пользовательское соглашение</a></small></div>
     </div>
+    <script>
+        
+    </script>
 </body>
 </html>

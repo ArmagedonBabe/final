@@ -18,3 +18,7 @@ window.addEventListener("scroll", function(){
   lastScrollTop = scrollTop;
 })
 
+function mode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

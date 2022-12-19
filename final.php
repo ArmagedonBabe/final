@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Main Page</title>
-    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="/openserver/phpmyadmin/final/final.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php
-    include('nav.php');
-    ?>
+<div class="header" id = "navbar">
+        <label for="toggle">&#9776</label>
+        <input type="checkbox" id="toggle">
+        <div class="navbar">
+            <a class="logo" href="/openserver/phpmyadmin/final/final.php">SHYMKENT</a>
+            <div class="order">
+            <div><a href="#it1">ABOUT</a></div>
+                <div><a href="#it2">HISTORY</a></div>
+                <div><a href="#it3">ENTERTAINMENT</a></div>
+                <div><a href="#it5">NATURE</a></div>
+                <div><a href="#it6">ESSENTIAL</a></div>
+            </div>
+            <div class="order2">
+                <div><a href="subPages/index.php">LOG IN</a></div>
+                <div><a href="subPages/lab72.html">CONTACTS</a></div>
+                <div><button onclick="mode()">mode</button></div>
+            </div>
+        </div>
+    </div>
     <div class="mainItems">
         <div class="item1" id="it1">
             <span class="textBox">ABOUT</span>
@@ -24,10 +40,6 @@
             <span class="textBox">ENTERTAINMENT</span>
             <span class="button" onclick = "change3()">ENTER &#8594</span>
         </div>
-        <div class="item4" id="it4">
-            <span class="textBox">PEOPLE</span>
-            <span class="button" onclick = "change4()">ENTER &#8594</span>
-        </div>
         <div class="item5" id="it5">
             <span class="textBox">NATURE</span>
             <span class="button" onclick = "change5()">ENTER &#8594</span>
@@ -40,9 +52,9 @@
     <hr>
     <div class="footer">
         <div class="footer1">
-            <img src="img\shymkent-logo.png" alt="logo">
+            <a href="#it1"><img src="img\shymkent-logo.png" alt="logo"></a>
             <br>
-            <div class="logo">SHYMKENT</div>
+            <a href="#it2"><div class="logo">SHYMKENT</div></a>
         </div>
         <div class="footer2">
             <a href="#it1">ABOUT</a>
@@ -54,19 +66,13 @@
             <a href="#it3">ENTERTAINMENT</a>
             <br>
             <br>
-            <a href="#it4">PEOPLE</a>
+            <a href="subPages/lab72.php">CONTACTS<</a>
         </div>
         <div class="footer4">
             <a href="#it5">NATURE</a>
             <br>
             <br>
             <a href="#it6">ESSENTIAL</a>
-        </div>
-        <div class="footer5">
-            <a href="#">HELP</a>
-            <br>
-            <br>
-            <a href="#">CONTACTS</a>
         </div>
     </div>
     <hr style="color: white">

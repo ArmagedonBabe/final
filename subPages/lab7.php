@@ -56,25 +56,74 @@
         button:hover{
             background-color: rgba(0,0,0,0.5);
         }
+        .error{
+	background-color: #feeaea;
+    border: 1px solid #fadadb;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+.error p{
+	padding: 10px 10px 10px 35px;
+	margin: 0;
+    border-radius: 3px;
+	background: url('../') 10px 50% no-repeat;
+}
     </style>
 </head>
 <body>
-    <div class="main">
-        <h1>SHYMKENT</h1>
-        <form>
-            <input type="email" name="mail" id="mail" placeholder="Phone number, username, or email" required>
-            <br>
-            <br>
-            <input type="password" name="pass" id="passw" placeholder="Password" required>
+<?php
+require_once('/OSPanel/modules/system/html/openserver/phpmyadmin/final/config.php');
+class User{
+    function CheckLoginData($email,$pass){
+        $db = new Connect;
+        $result = 'Submitted!';
+        if(isset($email) && isset($pass)){
+            $email = stripslashes(htmlspecialchars(md5(trim($email))));
+            $pass = stripslashes(htmlspecialchars(md5(trim($pass))));
+            if(empty($email) or empty($pass)){
+                $result .= "<div class=\"error\"><p><strong>ERROR:</strong> All fields are required!</p></div>";
+            }else{
+                $user = $db -> prepare("SELECT * FROM users WHERE email = :email AND password = :pass");
+                $user->execute(array(
+                    'email' => $email,
+                    'pass'  => $pass
+                ));
+                $info = $user -> fetch(PDO::FETCH_ASSOC);
+                if($user -> rowCount() == 0){
+                    $result .= "<div class=\"error\"><p><strong>ERROR:</strong> Login failed!</p></div>";
+                }else{
+                    $result .= 'Welcome'
+;                }
+        }
+        }
+        return $result;
+    }
 
+    function LoginForm(){
+        return ' 
+        <div class="main">
+        <h1 id = "title">SHYMKENT</h1>' .
+           ($_POST ? $this -> CheckLoginData($_POST['email'],$_POST['pass']):'')
+        . '<form id = "logform" action = "?a=login" method="post">
+            <input type="text" name="email" placeholder="Email">
+            <br>
+            <br>
+            <input type="password" name="pass" placeholder="Password">
+            <br>
+            <br>
+            <br>
+            <button>Log in</button>
         </form>
-        <button>Log in</button>
         <hr>
-        <button style="margin-top: 2vw">Forgot password?</button>
+        <button style="margin-top: 2vw" onclick = changePage()>You have not account?</button>
     </div>
-    <div class="secondMain">
-        Don't have an accountant? <a style="font-weight: bold; color: #85cdff; text-decoration: none" href="lab72.html">Sign up</a>
-    </div>
-
+    
+    ';
+    }
+}
+?>
+<script> 
+function changePage(){ window.location.href = 'lab72.php';}
+</script>
 </body>
 </html>
